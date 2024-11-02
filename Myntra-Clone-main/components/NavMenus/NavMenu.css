@@ -1,0 +1,52 @@
+/* desktop navagation menu style */
+ul {
+    list-style: none;
+    
+}
+.nav-menu-container ul{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.nav-menu-container{
+    display: none;
+    max-width: 1150px !important; 
+     padding-top: 10px; 
+     left: 50%;
+     /* top: calc(80.200px); */
+     padding-inline: 50px;
+    transform: translateX(-55%);
+     position: absolute; 
+    background-color: #fff;
+    z-index: 9;
+    animation-name: showNavMenu;
+    animation-duration: 1s;
+
+}
+@keyframes showNavMenu {
+    0%{
+opacity: 0%;
+    }
+    100%{
+    opacity: 100%;
+
+    }
+    
+}
+.nav-menu-container a{
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-size: .9rem;
+}
+.nav-menu-container p{
+    color: red;
+    font-weight: 600;
+}
+
+.nav-menu-container ul li a:hover{
+    font-weight: 700;
+    color: black;
+
+}
